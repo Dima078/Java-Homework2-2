@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int Sum = 150;
-        int Pay = 1300;
-        int Bonus = Pay/100;
-        if (Pay > 1000){
-            System.out.println("У вас на счету "+(Sum+Pay+Bonus)+ "рублей");
+        int sum = 150;
+        int pay = 1300;
+        int bonus;
+        if (pay > 1000){
+            bonus = pay/100;
+            System.out.println("У вас на счету "+(sum+pay+bonus)+ "рублей");
         } else {
-            System.out.println("У вас на счету "+ (Sum+Pay));
+            System.out.println("У вас на счету "+ (sum+pay));
         }
     }
 }
